@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background2.jpeg");
+  background-size: cover;
+}
+
+.heading {
+  margin-top: 140px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(0, 75, 128);
+}
+
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 50px 300px 250px 100px;
+  column-gap: 10px;
+  row-gap: 20px;
+  font-size: 23px;
+  align-items: center;
+  color: rgb(0, 75, 128);
+  text-align: center;
+}
+
+.todo-input-grid {
+  margin-bottom: 20px;
+  align-items: stretch;
+}
+
+.name-input,
+.due-date-input {
+  font-size: 23px;
+  padding: 6px;
+  outline: none;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgb(15, 71, 143);
+  color: rgb(0, 75, 128);
+  background-color: rgb(255, 255, 255);
+}
+
+.add-todo-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-todo-button:hover {
+  background-color: rgb(58, 143, 255);
+}
+
+.delete-todo-button {
+  background-color: rgb(211, 52, 52);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.delete-todo-button:hover {
+  background-color: rgb(255, 93, 93);
+}
+
+.name-input:hover,
+.due-date-input:hover {
+  border-width: 2px;
+}
+
+.styled-checkbox {
+  height: 25px;
+  width: 25px;
+}
